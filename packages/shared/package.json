@@ -1,0 +1,25 @@
+{
+  "name": "@jon8800/shared",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "pg": "^8.20.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.18.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
